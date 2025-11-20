@@ -1,58 +1,59 @@
 # AI AGENT 1: YouTube Transcript to Content for Social Media
 
-# YouTube Transcript AI Agent
+A lightweight Streamlit web application that extracts YouTube transcripts and generates AI-powered summaries using modern LLM APIs.
 
-This project is a Streamlit-based web application that allows users to input a query and a YouTube video ID to automatically fetch, process, and generate social media content across multiple platforms using AI.
+🔗 **Live App:** *(https://ai-agents-youtube-transcript.streamlit.app/)*
+
+---
 
 ## 🚀 Features
 
-* **Query Input**: Users can submit any question or content requirement.
-* **YouTube Video Support**: Accepts a YouTube video ID and retrieves the transcript.
-* **AI-Generated Content**: Produces social media content for one or multiple platforms based on user input.
-* **Streamlit UI**: Simple and interactive front-end interface.
+* Extracts transcripts from any public YouTube video with a transcript.
+* Generates AI-powered summaries and content for one or more social media platforms.
+* Simple, clean UI built with Streamlit.
+* Modular logic handled in `youtubetranscripter.py`.
+* Does **not** store any user data.
 
-## 📂 Project Structure
+---
+
+## 📁 Project Structure
 
 ```
-├── app.py               # Main Streamlit app
-├── requirements.txt     # Python dependencies
-└── README.md            # Project documentation
+.
+├── app.py                     # Main Streamlit app
+├── youtubetranscripter.py     # Transcript + AI summary logic
+└── requirements.txt           # Dependencies
 ```
 
-## ▶️ How to Run Locally
+---
 
-1. Clone the repository:
+## 🛠️ Local Installation & Setup
+
+### 1️. Clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd <project-folder>
+git clone https://github.com/<username>/<repo>.git
+cd <repo>
 ```
 
-2. Install dependencies:
+### 2️. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Start the Streamlit app:
+### 3️. Add your API keys
+
+Create a `.env` file (not included in GitHub):
+
+```
+AI_API_KEY=your_key
+```
+
+### 4. Run the app
 
 ```bash
 streamlit run app.py
 ```
 
-## 🔑 Environment Variables
-
-Make sure to add your API keys in a `.env` file:
-
-```
-OPENAI_API_KEY=your_api_key
-GROQ_API_KEY=your_api_key
-```
-
-## 🛠️ Technologies Used
-
-* **Python**
-* **Streamlit**
-* **OpenAI API / Groq API**
-* **YouTube Transcript API**
-
+---

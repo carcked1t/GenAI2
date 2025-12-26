@@ -87,9 +87,6 @@ streamlit run app.py
 
 ##  How This App is Different
 
-Unlike generic ChatPDF-style apps:
-
-* Focused specifically on **YouTube video transcripts**
 * Generates **platform-specific content** rather than just summarizing
 * Handles multiple transcript types (manual/generated)
 * Provides a **lightweight, cache-friendly, reproducible Streamlit UI**
